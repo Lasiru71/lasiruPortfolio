@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800;900&display=swap');
+
+:root {
+  /* ====== DARK BLACK + NEON GREEN THEME ====== */
+  --bg-main: #050505;
+  --bg-secondary: #0d0d0d;
+  --bg-card: rgba(255, 255, 255, 0.03);
+
+  --text-light: #f0f0f0;
+  --text-muted: #888888;
+
+  /* Neon Green Accent Colors */
+  --accent-green: #00ff88;
+  --accent-green-dim: #00cc66;
+  --accent-white: #ffffff;
+
+  /* Glow Shadows */
+  --green-glow: rgba(0, 255, 136, 0.3);
+  --green-glow-dim: rgba(0, 204, 102, 0.15);
+
+  /* Gradients */
+  --gradient-green: linear-gradient(135deg, #00ff88 0%, #00cc66 100%);
+  --gradient-green-glow: linear-gradient(90deg, rgba(0,255,136,0.15) 0%, transparent 100%);
+
+  /* Backward compatibility aliases */
+  --gradient-fire: var(--gradient-green);
+  --gradient-ember: var(--gradient-green);
+  --red-glow: var(--green-glow);
+  --orange-glow: var(--green-glow-dim);
+  --amber-glow: var(--green-glow-dim);
+  --accent-red: var(--accent-green);
+  --accent-orange: var(--accent-green-dim);
+  --accent-amber: var(--accent-green);
+  --purple-glow: var(--green-glow);
+  --indigo-glow: var(--green-glow-dim);
+  --aurora-glow: var(--green-glow-dim);
+  --accent-purple: var(--accent-green);
+  --accent-indigo: var(--accent-green-dim);
+  --accent-aurora: var(--accent-green);
+  --gradient-galaxy: var(--gradient-green);
+  --gradient-aurora: var(--gradient-green);
+
+  /* Fonts */
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+
+  color-scheme: dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-light);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-main); }
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 136, 0.2);
+  border-radius: 4px;
+  border: 2px solid var(--bg-main);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--accent-green); }
+
+/* Selection */
+::selection {
+  background: rgba(0, 255, 136, 0.25);
+  color: var(--accent-white);
+}
+
+/* Scroll Progress Bar */
+.scroll-progress-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 1100;
+  background: transparent;
+  pointer-events: none;
+}
+.scroll-progress-bar {
+  height: 100%;
+  background: var(--accent-green);
+  width: 0%;
+  transition: width 0.1s ease;
+  box-shadow: 0 0 12px var(--green-glow);
+}
+
+/* Section Headers */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--text-light);
+  letter-spacing: -1px;
+}
+.section-line {
+  width: 60px;
+  height: 3px;
+  background: var(--accent-green);
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px var(--green-glow);
+}
+
+/* Glassmorphism Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(0, 255, 136, 0.07);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card:hover {
+  background: rgba(0, 255, 136, 0.04);
+  border-color: rgba(0, 255, 136, 0.18);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5), 0 0 18px var(--green-glow-dim);
+}
+
+@media (max-width: 768px) {
+  .section-title { font-size: 2.2rem; }
+}

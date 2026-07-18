@@ -1,0 +1,91 @@
+.about-section {
+  padding: 8rem 2rem;
+  background: var(--bg-secondary);
+  position: relative;
+}
+.about-container { max-width: 1200px; margin: 0 auto; }
+.about-content-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  margin-top: 3.5rem;
+}
+.bio-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--text-light);
+  margin-bottom: 1.2rem;
+}
+.highlight-text {
+  font-size: 1.1rem;
+  color: var(--accent-green);
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+.bio-desc {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+.career-objective {
+  background: rgba(0, 255, 136, 0.03);
+  border-left: 3px solid var(--accent-green);
+  padding: 1.5rem;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.04);
+}
+.career-objective h4 {
+  font-family: var(--font-heading);
+  color: var(--accent-green);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.career-objective p { color: var(--text-muted); font-size: 0.97rem; line-height: 1.6; }
+.about-tech-stack { display: flex; flex-direction: column; gap: 2rem; }
+.tech-box { padding: 2rem; }
+.tech-box h3 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+.tech-sub { color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem; }
+.tech-tags { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+.tech-tag {
+  background: rgba(0, 255, 136, 0.06);
+  color: var(--accent-green);
+  border: 1px solid rgba(0, 255, 136, 0.15);
+  font-weight: 600; font-size: 0.82rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.tech-tag:hover {
+  background: var(--accent-green);
+  color: #050505;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 255, 136, 0.25);
+}
+.familiar-tag {
+  background: rgba(255,255,255,0.02);
+  color: var(--text-muted);
+  border: 1px solid rgba(255,255,255,0.07);
+  font-weight: 500; font-size: 0.82rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.familiar-tag:hover {
+  border-color: var(--accent-green);
+  color: var(--accent-green);
+  transform: translateY(-2px);
+}
+@media (max-width: 992px) {
+  .about-content-grid { grid-template-columns: 1fr; gap: 3rem; }
+}

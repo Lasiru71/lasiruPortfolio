@@ -1,0 +1,44 @@
+.custom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.8rem;
+  font-family: var(--font-heading), sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  border: 2px solid transparent;
+  outline: none;
+  letter-spacing: 0.3px;
+}
+
+/* Primary Button - Neon Green */
+.btn-primary {
+  background: var(--accent-green);
+  color: #050505;
+  font-weight: 700;
+  box-shadow: 0 4px 18px rgba(0, 255, 136, 0.25);
+}
+.btn-primary:hover {
+  background: var(--accent-green-dim);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 255, 136, 0.4);
+}
+.btn-primary:active { transform: translateY(-1px); }
+
+/* Secondary Button - Outlined Green */
+.btn-secondary {
+  background: transparent;
+  color: var(--accent-green);
+  border: 2px solid rgba(0, 255, 136, 0.35);
+}
+.btn-secondary:hover {
+  background: rgba(0, 255, 136, 0.07);
+  border-color: var(--accent-green);
+  transform: translateY(-3px);
+  box-shadow: 0 0 14px rgba(0, 255, 136, 0.2);
+}
+.btn-secondary:active { transform: translateY(-1px); }
