@@ -67,7 +67,7 @@ const Hero = () => {
           <p className="hero-bio">{PERSONAL_INFO.subHeading}</p>
           
           <div className="hero-cta">
-            <Button variant="primary" href={PERSONAL_INFO.cvUrl} target="_blank" rel="noopener noreferrer" download="Lasiru Hasaranga Hemasiri (CV).pdf">Download CV</Button>
+            <Button variant="primary" href={PERSONAL_INFO.cvUrl} target="_blank" rel="noopener noreferrer" download="Lasiru Hemasiri (CV).pdf">Download CV</Button>
             <Button variant="secondary" href="#projects">View Projects</Button>
             <Button variant="secondary" href="#contact">Contact Me</Button>
           </div>
