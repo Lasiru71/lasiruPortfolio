@@ -3,7 +3,7 @@ export const PERSONAL_INFO = {
   headline: "Information Technology Undergraduate | IT Support Enthusiast | Software Developer",
   subHeading: "Motivated Information Technology undergraduate at the Sri Lanka Institute of Information Technology (SLIIT) with a strong interest in IT Support, Technical Support, Database Management, and Software Development.",
   careerObjective: "Seeking internship or entry-level opportunities where technical skills can contribute to organizational success while continuously learning and growing.",
-  cvUrl: "/cv.pdf", // CV link
+  cvUrl: "/Lasiru Hemasiri (CV).pdf", // CV link
   socials: {
     github: "https://github.com/Lasiru71",
     linkedin: "https://www.linkedin.com/in/lasiru-hemasiri",
