@@ -47,7 +47,7 @@ const Contact = () => {
                 </div>
                 <div className="detail-texts">
                   <span className="detail-label">Email Me</span>
-                  <a href={`mailto:${PERSONAL_INFO.socials.email}`} className="detail-value">{PERSONAL_INFO.socials.email}</a>
+                  <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${PERSONAL_INFO.socials.email}`} target="_blank" rel="noopener noreferrer" className="detail-value">{PERSONAL_INFO.socials.email}</a>
                 </div>
               </div>
 
