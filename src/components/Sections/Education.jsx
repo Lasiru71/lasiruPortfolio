@@ -25,10 +25,12 @@ const Education = () => {
                 <span className="edu-duration">{edu.duration}</span>
                 <h3 className="edu-degree">{edu.degree}</h3>
                 <h4 className="edu-institution">{edu.institution}</h4>
-                <div className="edu-status-badge">
-                  <span className="badge-dot"></span>
-                  <span>{edu.status}</span>
-                </div>
+                {edu.status && (
+                  <div className="edu-status-badge">
+                    {edu.duration.toLowerCase().includes('present') && <span className="badge-dot"></span>}
+                    <span>{edu.status}</span>
+                  </div>
+                )}
               </div>
             </div>
           ))}

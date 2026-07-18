@@ -32,6 +32,12 @@ export const EDUCATION = [
     institution: "Sri Lanka Institute of Information Technology (SLIIT)",
     status: "3rd Year Undergraduate",
     duration: "2023 - Present"
+  },
+  {
+    degree: "G.C.E. Advanced Level",
+    institution: "R/Sivali Central College",
+    status: "Commerce Stream",
+    duration: "2020 - 2022"
   }
 ];
 
